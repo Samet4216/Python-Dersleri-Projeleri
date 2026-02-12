@@ -5,7 +5,7 @@ negatif değerleri alma
 """
 
 raw_altitudes = [1500.5, -20.0, 2100.2, 545.0, -999.0, 3050.0]#ham irtifa--  
-#1 metre yaklaşık 3.2 feet
+#1 metre yaklaşik 3.2 feet
 filtered_altitudes = [x*3.2 for x in raw_altitudes]
 
 normal_altitudes = ("NormalAltitudes",) #normal irtifalar--

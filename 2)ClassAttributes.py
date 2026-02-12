@@ -20,7 +20,7 @@ class drone:
         return self.id[:3].upper()
     def get_fleet_into(self):
         return f"The total number of drones is {drone.drone_count}"
-    #dısarıdan drone_count almiyoruz ama f-stringde belirtirken ust classta oldugu bildirilir.
+    #disaridan drone_count almiyoruz ama f-stringde belirtirken ust classta oldugu bildirilir.
 
 t1=drone("turkiye42")
 t2=drone("konya123")

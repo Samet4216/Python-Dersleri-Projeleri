@@ -6,7 +6,7 @@ class Asker:
         self.isim = isim
         self.kilo = kilo 
 
-#2)Namespace (Isim Alanı): Sinif nitelikleri ClassName.__dict__ icinde tutulurken, instance nitelikleri instance.__dict__ icinde tutulur. 
+#2)Namespace (Isim Alani): Sinif nitelikleri ClassName.__dict__ icinde tutulurken, instance nitelikleri instance.__dict__ icinde tutulur. 
 #Python bir degiskeni ararken once nesneye (-->self.ordu_adi?), bulamazsa sinifa (-->ordu_adi = "TÜRK KARA KUVVETLERİ") bakar.
 
 #3)Tracking (Takip): Belli bir sinifin icinde uretilen nesnelerin sayisini belirlemede kullanilir.
