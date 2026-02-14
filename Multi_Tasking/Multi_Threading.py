@@ -10,6 +10,35 @@ Boylece bir is Input/Output yuzunden beklerken baska bir is calisabilir ve ekran
 Bir program calistiginda buna process (surec) denir.
 Her process’in en az bir thread’i vardir (main thread).
 
+
+
+diagram = 
++---------------------------------------------+
+|                                             |
+|   +-------------+      +-------------+      |
+|   |    Core     |      |    Core     |      |
+|   +-------------+      +-------------+      |
+|                                             |
+|   +-------------+      +-------------+      |
+|   |    Core     |      |    Core     |      |
+|   +-------------+      +-------------+      |
+|                                |            |
++--------------------------------|------------+
+                                 |
+                                 |
+                                \|/
+                    +------------V----------+
+                  |   +---------+ +---------+ |
+                  |   | Thread  | | Thread  | |
+                  |   +---------+ +---------+ |
+                  |   +---------+ +---------+ |
+                  |   | Thread  | | Thread  | |
+                  |   +---------+ +---------+ |
+                    +-----------------------+
+
+her procesin de kendine has threadlari vardir.
+multi-processing ise farkli core(process) kullanir.
+
 Threading = Ascinin yemek piserken bos durmayip salata hazirlamasi gibi dusunebiliriz.CPU’yu hizlandirmaz, sadece bekleme zamanlarini verimli kullanir.
 ================================================================
 GIL = Global Interpreter Lock.
@@ -37,4 +66,3 @@ Sonuc olarak:
 I/O-bound islerde -> Threading mantiklidir.
 CPU-bound (zor Python) islerde -> Multiprocessing daha uygundur.
 """
-#
