@@ -24,3 +24,5 @@ class IHA:
         # Nesne silindiginde (gorev bittiginde) sayaci azaltiyoruz.
         IHA.aktif_iha_sayisi -= 1
         print(f"IHA {self.iha_id} sistemden ayrildi. Kalan Aktif Sayi: {IHA.aktif_iha_sayisi}") 
+
+#NOT:Attribute= iha_id, aktif_iha_sayisi gibi degiskenlerdir. Method= __init__, __del__ gibi fonksiyonlardir.
