@@ -1,4 +1,4 @@
-#----- yeni_liste = [(ifade) for (eleman) in (iterable) if (kosul)]----
+#----- yeni_liste = [(ifade) for (eleman) in (iterable) if (kosul)]---- 
 
 #1) yerel değişken dişaridaki değişkeni değiştiremez (local scope)
 x = 10
@@ -9,14 +9,14 @@ lst = [x for x in range(5)]
 cift_kareler = [x**2 for x in range(1, 11) if x % 2 == 0]
 
 
-#3) List comprehension, sonucun tamamini bellekte (RAM) bir kerede oluşturur.
+# List comprehension, sonucun tamamini bellekte (RAM) bir kerede oluşturur.
 
 
-#4) Eğer listeye hemen ihtiyacin yoksa, köşeli parantez yerine normal parantez () kullanarak ihtiyaç halinde oluşturulup,kullanilir.
+#3) Eğer listeye hemen ihtiyacin yoksa, köşeli parantez yerine normal parantez () kullanarak ihtiyaç halinde oluşturulup,kullanilir.
 lst = (x for x in range(5)) #anlik oluşturulur,anlik işlenir.
 
 
-#5) Nested Comprehension (İç İçe Döngüler): Matris işlemleri veya 3D koordinat dönüşümleri için kullanilir:
+#4) Nested Comprehension (İç İçe Döngüler): Matris işlemleri veya 3D koordinat dönüşümleri için kullanilir:
 matrix = [
     [1, 2, 3],
     [4, 5, 6],

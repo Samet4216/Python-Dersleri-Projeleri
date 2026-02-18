@@ -1,4 +1,4 @@
-""" 12.02.26
+""" 12.02.26 
 ham veriyi işle metre==feet dönüşümü yap
 negatif değerleri alma
 5k üstü irtifayi kritik 0-5k arasi irtifayi normal olacak şekilde tuple içine al
